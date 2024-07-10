@@ -26,45 +26,16 @@ public class Main {
         //Ex2:
 
         int[] arr = {1,1,1,3,3,5};
-        int[] numbers = {0,0,0,0,0,0,0,0,0,0};
+        int cc = 0;
+        System.out.print("Enter number: ");
+        int nn;
+        nn = in.nextInt();
         for (int i = 0; i < arr.length; i++) {
-            switch (arr[i])
-            {
-                case 0:
-                    numbers[0]++;
-                    break;
-                case 1:
-                    numbers[1]++;
-                    break;
-                case 2:
-                    numbers[2]++;
-                    break;
-                case 3:
-                    numbers[3]++;
-                    break;
-                case 4:
-                    numbers[4]++;
-                    break;
-                case 5:
-                    numbers[5]++;
-                    break;
-                case 6:
-                    numbers[6]++;
-                    break;
-                case 7:
-                    numbers[7]++;
-                    break;
-                case 8:
-                    numbers[8]++;
-                    break;
-                case 9:
-                    numbers[9]++;
-                    break;
+            if (nn == arr[i]) {
+                cc++;
             }
         }
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(i + " occurs " + numbers[i] + " times");
-        }
+            System.out.println(nn + " occurs " + cc + " times");
 
         System.out.println("------------------------");
         //Ex3:
